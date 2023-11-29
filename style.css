@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Hanken";
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-style: 18px;
+}
+body .object-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Hanken";
+}
+body .object-container .whole-pice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 20px;
+  width: 605px;
+  min-height: 400px;
+  margin: 130px auto;
+}
+@media screen and (max-width: 390px) {
+  body .object-container .whole-pice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+}
+body .object-container .whole-pice .object-left {
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(252, 100%, 67%)), to(hsl(241, 81%, 54%)));
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  width: 50%;
+  padding: 15px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (max-width: 390px) {
+  body .object-container .whole-pice .object-left {
+    width: 375px;
+    min-height: 45vh;
+    padding: 20px 15px;
+  }
+}
+body .object-container .whole-pice .object-left h3 {
+  color: rgba(214, 210, 210, 0.959);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 390px) {
+  body .object-container .whole-pice .object-left h3 {
+    margin-bottom: 15px;
+  }
+}
+body .object-container .whole-pice .object-left .circle {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, hsl(256, 72%, 46%)), to(hsla(241, 72%, 46%, 0)));
+  background: linear-gradient(hsl(256, 72%, 46%) 70%, hsla(241, 72%, 46%, 0));
+  padding: 40px 50px;
+}
+@media screen and (max-width: 390px) {
+  body .object-container .whole-pice .object-left .circle {
+    scale: 0.8;
+    margin-bottom: 10px;
+  }
+}
+body .object-container .whole-pice .object-left #score {
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+body .object-container .whole-pice .object-left #cent {
+  color: rgba(161, 157, 157, 0.918);
+  text-align: center;
+}
+body .object-container .whole-pice .object-left #text-score {
+  color: rgba(214, 210, 210, 0.959);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 0 25px;
+}
+@media screen and (max-width: 390px) {
+  body .object-container .whole-pice .object-left #text-score {
+    margin: 20px auto;
+  }
+}
+body .object-container .whole-pice .object-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  width: 50%;
+  -webkit-box-shadow: 2px 2px 20px 0px rgba(128, 128, 128, 0.075);
+          box-shadow: 2px 2px 20px 0px rgba(128, 128, 128, 0.075);
+  border-radius: 0 15px 15px 0;
+}
+@media screen and (max-width: 390px) {
+  body .object-container .whole-pice .object-right {
+    width: 375px;
+    height: 50vh;
+    margin-top: 25px;
+  }
+}
+body .object-container .whole-pice .object-right .summary {
+  margin: 0 auto;
+}
+@media screen and (max-width: 390px) {
+  body .object-container .whole-pice .object-right .summary {
+    margin-bottom: 25px;
+    margin-left: 25px;
+  }
+}
+body .object-container .whole-pice .object-right a {
+  width: 30px;
+  height: 30px;
+}
+body .object-container .whole-pice .object-right .min-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 14px;
+  font-weight: 600;
+  width: 250px;
+  padding: 13px;
+}
+@media screen and (max-width: 390px) {
+  body .object-container .whole-pice .object-right .min-div {
+    width: 305px;
+    margin-bottom: 20px;
+    scale: 0.9;
+  }
+}
+body .object-container .whole-pice .object-right #back1 {
+  background-color: hsla(0, 100%, 67%, 0.11);
+}
+body .object-container .whole-pice .object-right #back2 {
+  background: hsla(39, 100%, 56%, 0.11);
+}
+body .object-container .whole-pice .object-right #back3 {
+  background: hsla(166, 100%, 37%, 0.137);
+}
+body .object-container .whole-pice .object-right #back4 {
+  background: hsla(241, 67%, 83%, 0.39);
+}
+body .object-container .whole-pice .object-right #back5 {
+  background: hsl(224, 30%, 27%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgb(231, 229, 229);
+  border-radius: 25px;
+  letter-spacing: 1px;
+}
+body .object-container .whole-pice .object-right #text1 {
+  margin-left: -69px;
+  color: hsl(0, 98%, 64%);
+}
+body .object-container .whole-pice .object-right #text2 {
+  margin-left: -69px;
+  color: hsl(39, 100%, 56%);
+}
+body .object-container .whole-pice .object-right #text3 {
+  margin-left: -85px;
+  color: hsl(166, 100%, 37%);
+}
+body .object-container .whole-pice .object-right #text4 {
+  margin-left: -85px;
+  color: hsl(241, 53%, 62%);
+}
+body .object-container .whole-pice .object-right .negro {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+}
+@media screen and (max-width: 390px) {
+  footer {
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=style.css.map */
